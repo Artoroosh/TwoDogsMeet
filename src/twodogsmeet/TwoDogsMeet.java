@@ -73,15 +73,6 @@ public class TwoDogsMeet {
     int dog1Aggression = dog1.getAggression();
     int dog2Aggression = dog2.getAggression();   
     
-    if(dog1Aggression < 5 && dog2Aggression < 5 && dog1Hunger < 5 && dog2Hunger < 5){
-       System.out.println("Both " + userDog1Name + "and " + userDog2Name + " did not want to fight \n the meeting was very friendly" );
-    } else if(dog1Aggression  >= 5 && dog2Aggression <= 5 || dog1Hunger <= 5 && dog2Hunger >= 5) {
-    System.out.println( userDog1Name + " was not hungry but aggressive \n" + "while "+ userDog2Name + " was hungry but not aggressive \n");
-    } else if(dog1Aggression  <= 5 && dog2Aggression >= 5 || dog1Hunger >= 5 && dog2Hunger <= 5) {
-    System.out.println( userDog1Name + " was hungry but not aggressive \n" + "while "+ userDog2Name + " was not hungry but aggressive \n");
-     }else if(dog1Aggression  <= 5 && dog2Aggression <= 5 || dog1Hunger >= 5 && dog2Hunger <= 5) {
-    System.out.println( userDog1Name + " was hungry but not aggressive \n" + "while "+ userDog2Name + " was not hungry or aggressive \n");
-    
-    }
-    }   
+   
+ }   
 }
