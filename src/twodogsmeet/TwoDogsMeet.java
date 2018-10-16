@@ -68,11 +68,18 @@ public class TwoDogsMeet {
     else{
     JOptionPane.showMessageDialog(null, "Invalid Output");}
 
-    int dog1Hunger = dog1.getHunger();
-    int dog2Hunger = dog2.getHunger();
-    int dog1Aggression = dog1.getAggression();
-    int dog2Aggression = dog2.getAggression();   
-    
+    int dogHunger = dog1.getHunger()+dog2.getHunger();
+    int dogAggression = dog1.getAggression() + dog2.getAggression();
    
+    
+    System.out.println(userDog1Name+", a"+userDog1Breed +"Breed and " + userDog2Name+", a"+userDog2Breed +"Breed meet "
+    +"\n Arf! Arf! Bark! Bark!" );
+    
+    
+    if(dogAggression <= 10 || dogHunger <= 10){
+    System.out.println("The meeting did not end up in a fight");
+    } else  if(dogAggression >= 1 || dogHunger > 10){
+    System.out.println("The meeting did end up in a fight");
+    }  
  }   
 }
